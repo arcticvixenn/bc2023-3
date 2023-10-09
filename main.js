@@ -1,6 +1,6 @@
 const fs = require("node:fs");
 
-fs.readFile('C:\\Users\\16ler\\GovernmentBonds.json', (err, data) => {
+fs.readFile('GovernmentBonds.json', (err, data) => {
   if (err) {
     console.error(err);
     return;
