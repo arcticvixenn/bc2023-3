@@ -1,6 +1,6 @@
 const fs = require("node:fs");
 
-fs.readFile('GovernmentBonds.json', (err, data) => { //C:\git\bc2023-3\
+fs.readFile('data.json', (err, data) => { //C:\git\bc2023-3\
   if (err) {
     console.error(err);
     return;
