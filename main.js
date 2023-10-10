@@ -1,6 +1,6 @@
 const fs = require("node:fs");
 
-fs.readFile('GovernmentBonds.json', (err, data) => {
+fs.readFile('GovernmentBonds.json', (err, data) => { //C:\git\bc2023-3\
   if (err) {
     console.error(err);
     return;
@@ -16,7 +16,7 @@ fs.readFile('GovernmentBonds.json', (err, data) => {
     return `${stockCode}-${valCode}-${attraction}`;
   }).join('\n');
 
-  fs.writeFile('GovernmentBondsOutput.txt', formattedData, (err) => {
+  fs.writeFile('output.txt', formattedData, (err) => {
     if (err) {
       console.error(err);
       return;
